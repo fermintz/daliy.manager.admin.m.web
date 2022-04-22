@@ -1,0 +1,108 @@
+.addPayCard{
+  padding:15px;
+  border:1px solid #e2e2e2;
+  border-radius:10px;
+  overflow:hidden;
+
+  .item-top{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    .orderState{
+      display:flex;
+      align-items: center;
+      font-size:11px;
+      background:#08B882;
+      color:#fff;
+      padding:0 5px;
+      height:22px;
+      border-radius:3px;
+
+      &.complete{
+        background: #292929;
+      }
+    }
+
+    .row{
+      display:flex;
+      background:#f2f2f2;
+      padding:0 10px;
+      border-radius:3px;
+
+      .order{
+        display:flex;
+        align-items:center;
+        margin-right:10px;
+        height:22px;
+        border-right:1px solid #e2e2e2;
+        padding-right:10px;
+        &:last-child{
+          margin-right:0;
+          padding-right:0;
+        }
+        span{
+          font-size:11px;
+          margin-right:5px;
+          color:#292929;
+        }
+        strong{
+           font-size:13px;
+           font-weight:bold;
+           b{
+             color:#0007EE;
+           }
+        }
+      }
+    }
+  }
+
+  .item-cont{
+    margin:10px 0;
+    span{
+      display:block;
+      margin-bottom:5px;
+      &:last-child{
+        margin-bottom:0;
+      }
+    }
+    span.phone{
+      color:#16AF80;
+    }
+  }
+
+  .item-bottom{
+    display:flex;
+    align-items: center;
+    background:#f2f2f2;
+    height:32px;
+    padding:0 10px;
+    border-radius:5px;
+    
+
+    dl{
+      flex:1;
+      display:flex;
+      align-items: center;
+      justify-content: space-between;
+      
+      dt{
+        font-size:11px;
+      }
+      dd{
+        flex:1;
+        text-align:right;
+        font-size:13px;
+        font-weight:bold;
+      }
+    }
+
+    dl:first-child::after{
+      content:'';
+      height:10px;
+      background:#c2c2c2;
+      width:1px;
+      margin:0 10px;
+    }
+  }
+}

@@ -1,0 +1,77 @@
+.refound{
+  .middle{
+    margin:15px 0;
+    dl{
+      margin-bottom:20px;
+      dt{
+        margin-bottom:5px;
+      }
+      dd{
+        display:flex;
+      }
+    }
+
+    .priceWrite{
+      dd{
+        display:flex;
+        align-items: center;
+        height:40px;
+        border-radius:5px;
+        border:1px solid #e2e2e2;
+
+        input{
+          flex:1;
+          outline: none;
+          padding:0 10px;
+          text-align:right;
+          font-size:18px;
+        }
+        span{
+          width:40px;
+          text-align:center;
+        }
+      }
+    }
+
+
+    .selector{
+      dd{
+        background:#f2f2f2;
+        border-radius:25px;
+        padding:5px;
+        height:50px;
+
+        .v-btn{
+          flex:1;
+          border-radius:3px;
+          margin-right:5px;
+          height:40px;
+        }
+        .v-btn.selected{
+          background:#0007EE;
+          color:#fff;
+          border-radius:100px;
+        }
+        .v-btn:last-child{
+          margin-right:0;
+        }
+      }
+    }
+
+    .divider{
+      margin:20px 0;
+      height:1px;
+      background:#e2e2e2;
+    }
+
+    .guide{
+
+      span{
+        color:#898989;
+        display:block;
+        font-size:12px;
+        margin-bottom:5px;
+      }
+    }
+  }
+}

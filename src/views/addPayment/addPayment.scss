@@ -45,7 +45,26 @@
       }
     }   
   }
-  
+  .list-top{
+    display:flex;
+    overflow-x:auto;
+    align-items: center;
+    border-top:1px solid #292929;
+    height:50px;
+    border-bottom:1px solid #e2e2e2;
+    padding:0 20px;
+    gap:5px;
+
+    .v-btn{
+      height:30px;
+      border-radius:15px;
+      font-size:13px;
+    }
+    .v-btn.active{
+      background:#292929;
+      color:#fff
+    }
+  }
   .list{
     display:flex;
     flex-direction: column;

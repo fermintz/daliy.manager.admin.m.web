@@ -18,6 +18,15 @@
       
     </div>
     <div class="divider h10" />
+    <div class="list-top">
+      <v-btn 
+        text 
+        :class="{active:areaSelector === index}"
+        @click="areaSelector = index" 
+        v-for="(item, index) in ['전체','부산','서울']"
+        :key="index"
+      >{{item}}</v-btn>
+    </div>
     <div class="list">
       <div class="no-item">
         등록된 요청이 없습니다.
@@ -38,7 +47,9 @@ import Confirm from '@/components/confirm/confirm.vue'
   },
 })
 export default class extends Vue{
-  stateActive = 0;
+  areaSelector:number = 0;
+  stateActive:number = 0;
+
   addPaymentState = [
     {
       name:'추가결제',

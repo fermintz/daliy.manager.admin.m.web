@@ -11,8 +11,19 @@
         <dd>{{ item.number }}</dd>
       </dl>
     </div>
+    
     <div class="divider h10" />
 
+    <div class="list-top">
+      <v-btn 
+        text 
+        :class="{active:areaSelector === index}"
+        @click="areaSelector = index" 
+        v-for="(item, index) in ['전체','부산','서울']"
+        :key="index"
+      >{{item}}</v-btn>
+    </div>
+    
     <div class="list">
       <div class="no-item">
         등록된 주문이 없습니다.
@@ -33,6 +44,7 @@ import OrderCard from '@/components/orderCard/orderCard.vue'
   }
 })
 export default class order extends Vue {
+  areaSelector:number = 0;
   stateActive:number = 0;
   orderState = [
     {

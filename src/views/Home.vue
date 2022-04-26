@@ -19,9 +19,11 @@
             <span v-ripple>이름</span>
           </div>
         </v-menu>
-        
-        <input type="text" placeholder="검색하실 키워드를 입력해주세요" pattern="\d*" inputmode="numeric">
-        <v-btn text class="search-btn">
+        <input type="text" placeholder="검색키워드를 입력" pattern="\d*" inputmode="numeric">
+        <v-btn text icon class="del-btn">
+          <v-icon>mdi-close-circle</v-icon>
+        </v-btn>
+        <v-btn text icon class="search-btn">
           <v-icon>mdi-magnify</v-icon>
         </v-btn>
       </div>  

@@ -7,6 +7,7 @@
   justify-content: space-between;
   margin-bottom:15px;
 
+  
   .logo{
     strong{
       display:block;
@@ -22,12 +23,45 @@
     }
   }
 
-  .v-btn{
-    min-width:45px;
-    min-height:45px;
-    background:#F2F4F9;
-    .v-icon{
-      color:#292929;
+  .right{
+    display:flex;
+    align-items: center;
+
+    .area-selector{
+      height:40px;
+      border-radius:20px;
+      background:#f2f2f2;
+      margin-right:10px;
+      padding:0 15px;
+
+      label{
+        
+      }
+      .v-icon{
+        margin-left:5px;
+        font-size:18px;
+      }
     }
+  
+    .mapBtn{
+      min-width:40px;
+      min-height:40px;
+      background:#F2F4F9;
+      .v-icon{
+        color:#292929;
+      }
+    }
+  }
+}
+
+.area-menu{
+  background:#fff;
+  border-radius:5px;
+  span{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding:0 10px;
+    height:40px;
   }
 }

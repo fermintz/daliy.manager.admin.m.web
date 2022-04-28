@@ -1,10 +1,7 @@
 <template>
   <div class="addPayment">
     <div class="top">
-      <div class="left">
-        <h3>결제요청관리</h3>
-      </div>
-      <div class="right">
+   
         <dl 
           v-for="(item, index) in addPaymentState" 
           :key="index" 
@@ -15,10 +12,21 @@
           <dd>{{ item.number }}</dd>
         </dl>
       </div>    
-    </div>
+
     <div class="divider h10" />
+
+    <div class="list-opt">
+      <h4>추가결제</h4>
+      <div class="listInSearch">
+        <input type="text" placeholder="리스트 내 검색">
+        <v-btn icon> 
+          <v-icon>mdi-magnify</v-icon>
+        </v-btn>
+      </div>
+    </div>
     
     <div class="list">
+      
       <div class="no-item">
         등록된 요청이 없습니다.
       </div>

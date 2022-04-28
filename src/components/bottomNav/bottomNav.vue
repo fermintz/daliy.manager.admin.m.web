@@ -27,7 +27,7 @@ export default class BottomNavigation extends Vue {
     {
       name: "임시보관",
       icon: "mdi-archive-outline",
-      routeName:'addPayment'
+      routeName:'storage'
     },
     {
       name: "주문현황",
@@ -40,10 +40,16 @@ export default class BottomNavigation extends Vue {
       routeName:'home'
     },
     {
+      name: "추가결제",
+      icon: "mdi-credit-card",
+      routeName:'addPayment'
+    },
+    {
       name: "전체메뉴",
       icon: "mdi-menu",
       routeName:'drawer'
     },
+    
   ]
 
 }

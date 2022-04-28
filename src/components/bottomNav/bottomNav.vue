@@ -24,7 +24,11 @@ import Component from "vue-class-component";
 export default class BottomNavigation extends Vue {
   defaultPage:number = 2
   navigation = [
-    
+    {
+      name: "임시보관",
+      icon: "mdi-archive-outline",
+      routeName:'addPayment'
+    },
     {
       name: "주문현황",
       icon: "mdi-van-utility",
@@ -36,15 +40,10 @@ export default class BottomNavigation extends Vue {
       routeName:'home'
     },
     {
-      name: "결제요청",
-      icon: "mdi-text-box-check-outline",
-      routeName:'addPayment'
+      name: "전체메뉴",
+      icon: "mdi-menu",
+      routeName:'drawer'
     },
-    // {
-    //   name: "전체메뉴",
-    //   icon: "mdi-menu",
-    //   routeName:'drawer'
-    // },
   ]
 
 }

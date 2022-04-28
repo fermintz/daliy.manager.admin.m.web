@@ -1,6 +1,5 @@
 <template>
   <div class="order">
-
     <div class="top">
       <dl 
         v-for="(item, index) in orderState" 
@@ -14,7 +13,15 @@
     </div>
     
     <div class="divider h10" />
-    
+    <div class="list-opt">
+      <h4>주문예약</h4>
+      <div class="listInSearch">
+        <input type="text" placeholder="리스트 내 검색">
+        <v-btn icon> 
+          <v-icon>mdi-magnify</v-icon>
+        </v-btn>
+      </div>
+    </div>
     <div class="list">
       <div class="no-item">
         등록된 주문이 없습니다.

@@ -1,17 +1,16 @@
 <template>
   <div class="addPayment">
     <div class="top">
-   
-        <dl 
-          v-for="(item, index) in addPaymentState" 
-          :key="index" 
-          :class="{active: index === stateActive}"
-          @click="stateActive = index"
-        >
-          <dt>{{ item.name }}</dt>
-          <dd>{{ item.number }}</dd>
-        </dl>
-      </div>    
+      <dl 
+        v-for="(item, index) in addPaymentState" 
+        :key="index" 
+        :class="{active: index === stateActive}"
+        @click="stateActive = index"
+      >
+        <dt>{{ item.name }}</dt>
+        <dd>{{ item.number }}</dd>
+      </dl>
+    </div>    
 
     <div class="divider h10" />
 

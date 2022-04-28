@@ -44,11 +44,11 @@ export default class BottomNavigation extends Vue {
       icon: "mdi-credit-card",
       routeName:'addPayment'
     },
-    {
-      name: "전체메뉴",
-      icon: "mdi-menu",
-      routeName:'drawer'
-    },
+    // {
+    //   name: "전체메뉴",
+    //   icon: "mdi-menu",
+    //   routeName:'drawer'
+    // },
     
   ]
 

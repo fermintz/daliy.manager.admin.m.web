@@ -17,25 +17,21 @@ const routes: Array<RouteConfig> = [
       {
         path: '/order',
         name: 'order',
-        // route level code-splitting
-        // this generates a separate chunk (about.[hash].js) for this route
-        // which is lazy-loaded when the route is visited.
         component: () => import('@/views/order/order.vue')
       },
       {
         path: '/addPayment',
         name: 'addPayment',
-        // route level code-splitting
-        // this generates a separate chunk (about.[hash].js) for this route
-        // which is lazy-loaded when the route is visited.
         component: () => import('@/views/addPayment/addPayment.vue')
+      },
+      {
+        path: '/storage',
+        name: 'storage',
+        component: () => import('@/views/storage/storage.vue')
       },
       {
         path: '/drawer',
         name: 'drawer',
-        // route level code-splitting
-        // this generates a separate chunk (about.[hash].js) for this route
-        // which is lazy-loaded when the route is visited.
         component: () => import('@/views/drawer/drawer.vue')
       }
     ],
@@ -43,33 +39,23 @@ const routes: Array<RouteConfig> = [
   {
     path: '/detail',
     name: 'detail',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
+
     component: () => import('@/views/detail/detail.vue')
   },
   {
     path: '/addPayDetail',
     name: 'addPayDetail',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
     component: () => import('@/views/addPayDetail/addPayDetail.vue')
   },
   {
     path: '/login',
     name: 'login',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
+
     component: () => import('@/views/login/login.vue')
   },
   {
     path: '/map',
     name: 'map',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
     component: () => import('@/views/map/map.vue')
   },
   
